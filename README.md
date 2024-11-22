@@ -25,7 +25,7 @@ Este programa en Python ayuda a seguir el progreso de un juego de Bingo FOPRE co
 
 ## Cartones y Patrones
 
-El código incluye cuatro cartones de ejemplo (`carton1`, `carton2`, `carton3`, `carton4`).  Puede modificar estos cartones con sus propios números.  El centro de cada cartón se considera un comodín ("J") y siempre está marcado.
+El código incluye cuatro cartones de ejemplo (`carton1`, `carton2`, `carton3`, `carton4`), que fue los que jugué en 2024.  Puede modificar estos cartones con sus propios números.  El centro de cada cartón se considera un comodín ("J") y siempre está marcado.
 
 Los patrones de victoria están definidos en el diccionario `patterns`. Puede modificar o agregar nuevos patrones según sus necesidades.  Cada patrón se representa como una matriz de booleanos de 5x5, donde `True` indica que la casilla debe estar marcada para ganar.
 

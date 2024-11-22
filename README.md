@@ -20,7 +20,7 @@ Este programa en Python ayuda a seguir el progreso de un juego de Bingo FOPRE co
 
 4.  **Juego:** Una vez iniciado, el programa le pedirá que ingrese los números que van saliendo.  Ingrese la letra y el número (ej. F15, O27) o pulse Enter para saltarse un turno. Si alguien ya ganó y desea terminar la partida antes, escriba "salir".
 
-5.  **Resultados:** Después de cada número ingresado, el programa mostrará el estado de todos los cartones, marcando los números coincidentes con una "X" y el comodín con una "J". Si un cartón completa el patrón de victoria, el programa anunciará el ganador y preguntará si desea jugar otra partida.
+5.  **Resultados:** Después de cada número ingresado, el programa mostrará el estado de todos los cartones, marcando los números coincidentes con una "X" y el comodín con una "J". Si un cartón completa el patrón de victoria, el programa anunciará el cartón ganador y preguntará si desea jugar otra vez.
 
 
 ## Cartones y Patrones
@@ -32,7 +32,7 @@ Los patrones de victoria están definidos en el diccionario `patterns`. Puede mo
 ## Consideraciones
 
 *   Asegúrese de que los números en los cartones estén dentro del rango esperado y que las letras de las columnas sean correctas.
-*   El programa no genera números aleatorios para el Bingo; debe ingresarlos manualmente.
+*   El programa no genera números aleatorios para el Bingo, usted debe ingresarlos manualmente.
 *   Si necesita modificar la lógica del juego (ej. número de cartones, rango de números), puede ajustar el código fuente.
 
 ## Ejemplo de uso

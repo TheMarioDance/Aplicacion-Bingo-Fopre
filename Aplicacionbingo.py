@@ -33,7 +33,7 @@ def print_boards(cardboards, marked_list):
                 if marked_list[i][r][c]:
                     row_str += "X "  # Marcar con 'X' si está marcado
                 elif r == 2 and c == 2:
-                    row_str += "J "  # Marcar con 'J' si es el comodín
+                    row_str += "J "  # Marcar con 'J' si es el comodín (igual el comodín se encuentra marcado por defecto)
                 else:
                     row_str += str(cardboard[r][c][1]) + " " if cardboard[r][c][1] is not None else "__ "  # Mostrar "__" si está libre
             print(row_str)
@@ -126,12 +126,12 @@ for i in range(len(cardboards)):
 
 while True:
     called_input = input("Ingrese el número llamado (ej. F15, pulse Enter para saltar o escriba 'salir' para terminar): ").upper()
-    if not called_input:  # Handle empty input (skip turn)
+    if not called_input:  # Manejar input vacío (cuando se da enter)
         continue
 
-    if called_input == "SALIR":  # Exit condition
+    if called_input == "SALIR":  # Condición de salidaa
         print("Saliendo del juego.")
-        break # Exits loop
+        break # Salida del loop
 
     try:
         letter = called_input[0]
@@ -144,8 +144,8 @@ while True:
                 print(f"¡Cartón {i + 1} gana!")
                 another_game = input("¿Jugar otra partida (si/no)? ").lower()
                 if another_game != 'si':
-                    exit()  # Only exit if they don't want another game
-                else:  # Reset for new game
+                    exit()  # Solo se sale si se quiere jugar otra partida
+                else:  # Reinicio para un nuevo juego
                     current_pattern = patterns.get(input("Ingrese el patrón a buscar (F, O, P, R, completo): "))
                     if current_pattern is None:
                         print("Patrón no válido. Saliendo.")
@@ -153,7 +153,7 @@ while True:
                     marked_list = [np.full((5, 5), False) for _ in range(len(cardboards))]  # Una matriz marcada para cada cartón
                     for j in range(len(cardboards)):
                         marked_list[j][2, 2] = True  # Marcar el comodín en cada cartón
-                    break  # Exit the inner loop to start new game
+                    break  # Salir del inner loop para empezar un nuevo juego
 
 
 

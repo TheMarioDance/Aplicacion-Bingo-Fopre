@@ -37,8 +37,11 @@ Los patrones de victoria están definidos en el diccionario `patterns`. Puede mo
 
 ## Ejemplo de uso
 Ingrese el patrón a buscar (F, O, P, R, completo): completo
+
 Ingrese el número llamado (ej. F15, o pulse Enter para saltar o escriba salir para terminar antes): F10
 ... (se muestran los cartones con las marcas)
+
 Ingrese el número llamado (ej. F15, o pulse Enter para saltar o escriba salir para terminar antes): O27
 ... (se muestran los cartones con las marcas)
+
 ... (el juego continúa hasta que un cartón gane o se escriba "salir")
